@@ -1,0 +1,20 @@
+{
+  "name": "OpenVisus NASA Dashboard",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "settings": {
+    "python.defaultInterpreterPath": "/opt/conda/envs/OpenVisus-NASA/bin/python",
+    "python.languageServer": "Default",
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "ms-vscode.cpptools",
+    "h5web.vscode-h5web",
+    "davidanson.vscode-markdownlint"
+  ],
+  "postCreateCommand": "chmod +x .devcontainer/setup-hooks.sh && ./.devcontainer/setup-hooks.sh"
+
+}
